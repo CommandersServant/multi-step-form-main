@@ -19,24 +19,39 @@
   <!-- Sidebar start -->
   <div id="form-main-card">
     <div id="sidebar">
-      <ol>
-        <li>
-          <h5 class="step-nums step-1">Step 1</h5>
-          <h3 class="steps">Your info</h3>
-        </li>
-        <li>
-          <h5 class="step-nums step-2">Step 2</h5>
-          <h3 class="steps">Select plan</h3>
-        </li>
-        <li>
-          <h5 class="step-nums step-3">Step 3</h5>
-          <h3 class="steps">Add-ons</h3>
-        </li>
-        <li>
-          <h5 class="step-nums step-4">Step 4</h5>
-          <h3 class="steps">Summary</h3>
-        </li>
-      </ol>
+
+      <div>
+        <div class="div-number">1</div>
+        <div>
+          <h5 class="step-nums step-1">STEP 1</h5><br>
+          <h3 class="steps">YOUR INFO</h3>
+        </div>
+      </div>
+
+      <div>
+        <div class="div-number">2</div>
+        <div>
+          <h5 class="step-nums step-2">STEP 2</h5><br>
+          <h3 class="steps">SELECT PLAN</h3>
+        </div>
+      </div>
+
+      <div>
+        <div class="div-number">3</div>
+        <div>
+          <h5 class="step-nums step-3">STEP 3</h5><br>
+          <h3 class="steps">ADD-ONS</h3>
+        </div>
+      </div>
+
+      <div>
+        <div class="div-number">4</div>
+        <div>
+          <h5 class="step-nums step-4">STEP 4</h5><br>
+          <h3 class="steps">SUMMARY</h3>
+        </div>
+      </div>
+
     </div>
     <!-- Sidebar end -->
 
@@ -102,48 +117,95 @@
           <!-- Step 2 end -->
 
           <!-- Step 3 start -->
+          <div class="pick-add-ons-container">
+            <h1 class="form-header">Pick add-ons</h1>
+            <p class="form-description">Add-ons help enhance your gaming experience.</p>
 
-          Pick add-ons
-          Add-ons help enhance your gaming experience.
+            <div class="add-on">
+              <div>
+                <h3>Online service</h3>
+                <p>Access to multiplayer games</p>
+              </div>
+              <p class="add-on-price">+$1/mo</p>
+            </div>
 
-          Online service
-          Access to multiplayer games
-          +$1/mo
+            <div class="add-on">
+              <div>
+                <h3>Larger storage</h3>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+              <p class="add-on-price">+$2/mo</p>
+            </div>
 
-          Larger storage
-          Extra 1TB of cloud save
-          +$2/mo
+            <div class="add-on">
+              <div>
+                <h3>Customizable Profile</h3>
+                <p>Custom theme on your profile</p>
+              </div>
+              <p class="add-on-price">+$2/mo</p>
+            </div>
+          </div>
 
-          Customizable Profile
-          Custom theme on your profile
-          +$2/mo
-
-          Go Back
-          Next Step
+          <button>Go Back</button>
+          <button>Next Step</button>
 
           <!-- Step 3 end -->
 
           <!-- Step 4 start -->
+          <div class="finishing-up-container">
+            <h1 class="form-header">Finishing up</h1>
+            <p class="form-description">Double-check everything looks OK before confirming.</p>
 
-          Finishing up
-          Double-check everything looks OK before confirming.
+            <!-- Dynamically add subscription and add-on selections here -->
+            <div class="all-selections">
+              <div>
+                <div>
+                  <p class="plan-selected">Arcade (Monthly)</p>
+                  <a href="">Change</a>
+                </div>
+                <p class="plan-price"></p>
+              </div>
+              <hr>
+              <div>
+                <div>
+                  <p class="add-on-selected">Online service</p>
+                  <p class="add-on-price">+$1/mo</p>
+                </div>
+                <div>
+                  <p class="add-on-selected">Online service</p>
+                  <p class="add-on-price">+$1/mo</p>
+                </div>
+              </div>
 
-          <!-- Dynamically add subscription and add-on selections here -->
+            </div>
 
-          Total (per month/year)
+            <div>
+              <p class="total-price-label">Total (per month/year)</p>
+              <p class="total-price">+12/mo</p>
+            </div>
 
-          Go Back
-          Confirm
+            <button>Go Back</button>
+            <button>Confirm</button>
+
+          </div>
+
+
+
+
+
 
           <!-- Step 4 end -->
 
           <!-- Step 5 start -->
+          <div class="thank-you-message-container">
 
-          Thank you!
-
-          Thanks for confirming your subscription! We hope you have fun
-          using our platform. If you ever need support, please feel free
-          to email us at support@loremgaming.com.
+            <h1>Thank you!</h1>
+            <p>
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free
+              to email us at support@loremgaming.com.
+            </p>
+          </div>
 
           <!-- Step 5 end -->
         </div>
@@ -151,10 +213,10 @@
 
   </div>
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>
