@@ -32,7 +32,7 @@ body {
   padding: 17px;
   display: grid;
   grid-template-columns: 29% 70%;
-  height: 90%;
+  height: 600px;
   width: 956.2px;
 }
 
@@ -83,22 +83,70 @@ body {
   letter-spacing: 1px;
 }
 
+#form-area {
+  height: 100%;
+  padding: 20px 90px;
+  box-sizing: border-box;
+}
 
+.form-header {
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 10px;
+}
+
+.form-description {
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 40px;
+}
+
+.user-info-form-container {
+  display: none;
+  height: 100%;
+}
+
+.user-info-form-container label {
+  color: hsl(213, 96%, 18%);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.user-info-form-container input {
+  margin-top: 4px;
+  margin-bottom: 25px;
+  width: 440px;
+  height: 45px;
+  border: 1px solid;
+  border-color: hsl(229, 24%, 87%);
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding-left: 13px;
+  font-family: 'Ubuntu-Regular';
+  font-weight: 600;
+}
+
+.user-info-form-container input::placeholder {
+  color: hsl(231, 11%, 63%);
+  opacity: 0.9;
+}
 
 .plan-selection-container {
-  display: none;
+  display: block;
+  height: 100%;
 }
 
 .pick-add-ons-container {
   display: none;
+  height: 100%;
 }
 
 .finishing-up-container {
   display: none;
+  height: 100%;
 }
 
 .thank-you-message-container {
   display: none;
+  height: 100%;
 }
 
 
