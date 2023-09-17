@@ -178,35 +178,39 @@
 
           <!-- Dynamically add subscription and add-on selections here -->
           <div class="all-selections">
-            <div>
+            <div class="plan-selected-container">
               <div>
                 <p class="plan-selected">Arcade (Monthly)</p>
-                <a href="">Change</a>
+                <a class="change-plan" href="">Change</a>
               </div>
-              <p class="plan-price"></p>
+              <p class="plan-selected-price">$90/yr</p>
             </div>
             <hr>
             <div>
-              <div>
+              <div class="add-on-selected-container">
                 <p class="add-on-selected">Online service</p>
-                <p class="add-on-price">+$1/mo</p>
+                <p class="add-on-selected-price">+$1/mo</p>
               </div>
-              <div>
-                <p class="add-on-selected">Online service</p>
-                <p class="add-on-price">+$1/mo</p>
+              <div class="add-on-selected-container">
+                <p class="add-on-selected">Larger storage</p>
+                <p class="add-on-selected-price">+$1/mo</p>
               </div>
             </div>
 
           </div>
 
 
-          <div>
-            <p class="total-price-label">Total (per month/year)</p>
-            <p class="total-price">+12/mo</p>
+          <div class="total-price-container">
+            <p class="total-price-label">Total (per month)</p>
+            <p class="total-price">$12/mo</p>
           </div>
 
-          <button>Go Back</button>
-          <button>Confirm</button>
+          <div class="button-container">
+            <button class="second-step-back-button back-button">Go Back</button>
+            <div></div>
+            <button class="second-step-next-button confirm-button">Confirm</button>
+          </div>
+
         </div>
 
 

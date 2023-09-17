@@ -1,2 +1,7 @@
-'use strict'
 
+
+a = {
+    duration: "yearly",
+    plan: "arcade",
+    addons: [],
+}

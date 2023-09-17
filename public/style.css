@@ -28,6 +28,7 @@ body {
 #form-main-card {
   background-color: white;
   box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 13px;
   padding: 17px;
   display: grid;
@@ -166,7 +167,7 @@ body {
 
 .plan-choices {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: repeat(3, 33.3%);
   width: 490px;
 }
 
@@ -211,7 +212,7 @@ body {
 }
 
 .pick-add-ons-container {
-  display: block;
+  display: none;
   height: 100%;
 }
 
@@ -252,8 +253,94 @@ body {
 }
 
 .finishing-up-container {
-  display: none;
+  display: block;
   height: 100%;
+}
+
+.all-selections {
+  background-color: hsl(217, 100%, 97%);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+.plan-selected-container {
+  display: grid;
+  grid-template-columns: 88% 12%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.plan-selected {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: hsl(213, 96%, 18%);
+  font-size: 17px;
+  font-family: 'Ubuntu-Regular';
+  font-weight: 600;
+}
+
+.change-plan {
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.plan-selected-price {
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+}
+
+hr {
+  height: 1px;
+  background-color: hsl(229, 24%, 87%);
+  border: none;
+}
+
+.add-on-selected-container {
+  display: grid;
+  grid-template-columns: 88% 12%;
+  align-items: center;
+  height: 40px;
+}
+
+.add-on-selected {
+  color: hsl(231, 11%, 63%);
+}
+
+.add-on-selected-price {
+  color: hsl(213, 96%, 18%);
+  font-size: 14px;
+}
+
+.total-price-container {
+  margin-left: 25px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 83% 17%;
+}
+
+.total-price-label {
+  color: hsl(231, 11%, 63%);
+}
+
+.total-price {
+  font-family: 'Ubuntu-Bold';
+  color: hsl(243, 100%, 62%);
+  font-size: 20px;
+}
+
+.confirm-button {
+  background-color: hsl(243, 100%, 62%);
+  color: hsl(217, 100%, 97%);
+  font-family: 'Ubuntu-Regular';
+  height: 50px;
+  width: 120px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .thank-you-message-container {
