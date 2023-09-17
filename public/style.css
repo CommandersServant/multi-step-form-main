@@ -156,7 +156,7 @@ body {
 
 .button-container {
   display: grid;
-  grid-template-columns: 20% 56% 24%;
+  grid-template-columns: 20% 54% 26%;
 }
 
 .plan-selection-container {
@@ -213,6 +213,42 @@ body {
 .pick-add-ons-container {
   display: block;
   height: 100%;
+}
+
+.add-ons {
+  margin-bottom: 80px;
+}
+
+.add-on {
+  display: grid;
+  grid-template-columns: 15% 68% 17%;
+  align-items: center;
+  border: 1px solid;
+  border-color: hsl(229, 24%, 87%);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#online-service, #larger-storage, #customizable-profile {
+  height: 20px;
+}
+
+.add-on-name {
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 8px;
+}
+
+.add-on-description {
+  margin-top: 0;
+  font-size: 14px;
+  color: hsl(231, 11%, 63%);
+}
+
+.add-on-price {
+  color:  hsl(243, 100%, 62%);
+  font-size: 14px;
+  height: 20px;
 }
 
 .finishing-up-container {

@@ -131,31 +131,42 @@
           <h1 class="form-header">Pick add-ons</h1>
           <p class="form-description">Add-ons help enhance your gaming experience.</p>
 
-          <div class="add-on">
-            <div>
-              <h3>Online service</h3>
-              <p>Access to multiplayer games</p>
+          <div class="add-ons">
+            <div class="add-on">
+              <input type="checkbox" name="online-service" id="online-service">
+              <div>
+                <h4 class="add-on-name">Online service</h4>
+                <p class="add-on-description">Access to multiplayer games</p>
+              </div>
+              <p class="add-on-price">+$1/mo</p>
             </div>
-            <p class="add-on-price">+$1/mo</p>
+
+            <div class="add-on">
+              <input type="checkbox" name="larger-storage" id="larger-storage">
+              <div>
+                <h4 class="add-on-name">Larger storage</h4>
+                <p class="add-on-description">Extra 1TB of cloud save</p>
+              </div>
+              <p class="add-on-price">+$2/mo</p>
+            </div>
+
+            <div class="add-on">
+              <input type="checkbox" name="customizable-profile" id="customizable-profile">
+              <div>
+                <h4 class="add-on-name">Customizable Profile</h4>
+                <p class="add-on-description">Custom theme on your profile</p>
+              </div>
+              <p class="add-on-price">+$2/mo</p>
+            </div>
           </div>
 
-          <div class="add-on">
-            <div>
-              <h3>Larger storage</h3>
-              <p>Extra 1TB of cloud save</p>
-            </div>
-            <p class="add-on-price">+$2/mo</p>
+          <div class="button-container">
+            <button class="second-step-back-button back-button">Go Back</button>
+            <div></div>
+            <button class="second-step-next-button next-button">Next Step</button>
           </div>
 
-          <div class="add-on">
-            <div>
-              <h3>Customizable Profile</h3>
-              <p>Custom theme on your profile</p>
-            </div>
-            <p class="add-on-price">+$2/mo</p>
-          </div>
-          <button>Go Back</button>
-          <button class="next-button">Next Step</button>
+
         </div>
 
         <!-- Step 3 end -->
