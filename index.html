@@ -72,7 +72,7 @@
           <label for="phone-number-input">Phone Number</label><br>
           <input name="phone-number" id="phone-number-input" type="text" placeholder="e.g. +1 234 567 890"><br>
 
-          <button class="next-button">Next Step</button>
+          <button class="first-step-next-button next-button">Next Step</button>
         </div>
 
         <!-- Step 1 end -->
@@ -84,35 +84,44 @@
           <p class="form-description">You have the option of monthly or yearly billing.</p>
 
           <div class="plan-choices">
-            <div class="plan">
-              <h3>Arcade</h3>
-              <p>$9/mo</p>
+            <div class="plan" id="plan-arcade">
+              <img src="public/assets/images/icon-arcade.svg" alt="arcade-icon">
+              <h3 class="plan-name">Arcade</h3>
+              <p class="plan-price">$9/mo</p>
               <div class="yearly-free-months">2 months free</div>
             </div>
 
-            <div class="plan">
-              <h3>Advanced</h3>
-              <p>$12/mo</p>
+            <div class="plan" id="plan-advanced">
+              <img src="public/assets/images/icon-advanced.svg" alt="">
+              <h3 class="plan-name">Advanced</h3>
+              <p class="plan-price">$12/mo</p>
               <div class="yearly-free-months">2 months free</div>
             </div>
 
-            <div class="plan">
-              <h3>Pro</h3>
-              <p>$15/mo</p>
+            <div class="plan" id="plan-pro">
+              <img src="public/assets/images/icon-pro.svg" alt="">
+              <h3 class="plan-name">Pro</h3>
+              <p class="plan-price">$15/mo</p>
               <div class="yearly-free-months">2 months free</div>
             </div>
 
           </div>
 
-          <span class="plan-duration">Monthly</span>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-          <span class="plan-duration">Yearly</span><br>
+          <div class="yearly-monthly-choice">
+            <span class="plan-duration">Monthly</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span class="plan-duration">Yearly</span>
+          </div>
+          <br>
+          <div class="button-container">
+            <button class="second-step-back-button back-button">Go Back</button>
+            <div></div>
+            <button class="second-step-next-button next-button">Next Step</button>
+          </div>
 
-          <button>Go Back</button>
-          <button>Next Step</button>
         </div>
 
         <!-- Step 2 end -->
@@ -146,7 +155,7 @@
             <p class="add-on-price">+$2/mo</p>
           </div>
           <button>Go Back</button>
-          <button>Next Step</button>
+          <button class="next-button">Next Step</button>
         </div>
 
         <!-- Step 3 end -->
@@ -189,27 +198,26 @@
           <button>Confirm</button>
         </div>
 
+
+
+
+
+
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+        <div class="thank-you-message-container">
+
+          <h1>Thank you!</h1>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun
+            using our platform. If you ever need support, please feel free
+            to email us at support@loremgaming.com.
+          </p>
+        </div>
+
+        <!-- Step 5 end -->
       </div>
-
-
-
-
-
-
-      <!-- Step 4 end -->
-
-      <!-- Step 5 start -->
-      <div class="thank-you-message-container">
-
-        <h1>Thank you!</h1>
-        <p>
-          Thanks for confirming your subscription! We hope you have fun
-          using our platform. If you ever need support, please feel free
-          to email us at support@loremgaming.com.
-        </p>
-      </div>
-
-      <!-- Step 5 end -->
   </div>
   </form>
 

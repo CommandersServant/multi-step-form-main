@@ -129,13 +129,89 @@ body {
   opacity: 0.9;
 }
 
+.first-step-next-button {
+  margin-top: 70px;
+  margin-left: 320px;
+}
+
+.next-button {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  font-family: 'Ubuntu-Regular';
+  height: 50px;
+  width: 120px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.back-button {
+  font-family: 'Ubuntu-Regular';
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(231, 11%, 63%);
+  background-color: white;
+  border: 0;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 20% 56% 24%;
+}
+
 .plan-selection-container {
-  display: block;
+  display: none;
   height: 100%;
 }
 
+.plan-choices {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  width: 490px;
+}
+
+.plan {
+  width: 145px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 7px;
+  border-color: hsl(229, 24%, 87%);
+  padding: 16px;
+}
+
+.plan-name {
+  margin-top: 50px;
+  margin-bottom: 0;
+  color: hsl(213, 96%, 18%);
+  font-size: 18px;
+}
+
+.plan-price {
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: hsl(231, 11%, 63%);
+}
+
+.yearly-free-months {
+  margin-top: 8px;
+  color: hsl(213, 96%, 18%);
+  font-size: 14px;
+}
+
+.yearly-monthly-choice {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 9px;
+  height: 48px;
+  width: 473px;
+}
+
 .pick-add-ons-container {
-  display: none;
+  display: block;
   height: 100%;
 }
 
@@ -177,8 +253,10 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 24px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /* Hide default HTML checkbox */
@@ -204,8 +282,8 @@ body {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 15px;
+  width: 15px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -214,11 +292,11 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: hsl(213, 96%, 18%);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px hsl(213, 96%, 18%);
 }
 
 input:checked + .slider:before {
