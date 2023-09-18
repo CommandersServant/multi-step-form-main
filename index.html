@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="public/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="public/style.css">
+  <script src="public/navigateSteps.js" defer></script>
   <script src="public/main.js" defer></script>
 
   <title>Frontend Mentor | Multi-step form</title>
@@ -21,33 +22,33 @@
     <div id="sidebar">
 
       <div>
-        <div class="div-number">1</div>
+        <div class="div-number step-1">1</div>
         <div>
-          <h5 class="step-nums step-1">STEP 1</h5><br>
+          <h5 class="step-nums">STEP 1</h5><br>
           <h3 class="steps">YOUR INFO</h3>
         </div>
       </div>
 
       <div>
-        <div class="div-number">2</div>
+        <div class="div-number step-2">2</div>
         <div>
-          <h5 class="step-nums step-2">STEP 2</h5><br>
+          <h5 class="step-nums">STEP 2</h5><br>
           <h3 class="steps">SELECT PLAN</h3>
         </div>
       </div>
 
       <div>
-        <div class="div-number">3</div>
+        <div class="div-number step-3">3</div>
         <div>
-          <h5 class="step-nums step-3">STEP 3</h5><br>
+          <h5 class="step-nums">STEP 3</h5><br>
           <h3 class="steps">ADD-ONS</h3>
         </div>
       </div>
 
       <div>
-        <div class="div-number">4</div>
+        <div class="div-number step-4">4</div>
         <div>
-          <h5 class="step-nums step-4">STEP 4</h5><br>
+          <h5 class="step-nums">STEP 4</h5><br>
           <h3 class="steps">SUMMARY</h3>
         </div>
       </div>
@@ -70,7 +71,7 @@
           <input name="email" id="email-input" type="text" placeholder="e.g. stephenking@lorem.com"><br>
 
           <label for="phone-number-input">Phone Number</label><br>
-          <input name="phone-number" id="phone-number-input" type="text" placeholder="e.g. +1 234 567 890"><br>
+          <input name="phone-number" id="phone-number-input" type="number" placeholder="e.g. +1 234 567 890"><br>
 
           <button class="first-step-next-button next-button">Next Step</button>
         </div>

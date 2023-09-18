@@ -55,7 +55,7 @@ body {
 .div-number {
   color: white;
   height: 35px;
-  width: 35px;
+  width: 34px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +64,7 @@ body {
   border: 1px solid;
   border-color: white;
   border-radius: 100%;
+  font-weight: 700;
 }
 
 .step-nums {
