@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="public/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="public/style.css">
+  <script src="public/formValidation.js" defer></script>
   <script src="public/navigateSteps.js" defer></script>
   <script src="public/main.js" defer></script>
 
@@ -56,22 +57,33 @@
     </div>
     <!-- Sidebar end -->
 
-    <form action="" method="post">
+    <form name="game-form" action="" method="post">
       <div id="form-area">
         <!-- Step 1 start -->
         <div class="user-info-form-container">
           <h1 class="form-header">Personal info</h1>
           <p class="form-description">Please provide your name, email address, and phone number.</p>
 
+          <div class="name-input-label-container input-label-container">
+            <label id="name-input-label" class="input-label" for="name-input">Name</label>
+            <p class="name-error error-message"></p>
+          </div>
 
-          <label for="name-input">Name</label><br>
           <input name="name" id="name-input" type="text" placeholder="e.g. Stephen King"><br>
 
-          <label for="email-input">Email Address</label><br>
-          <input name="email" id="email-input" type="text" placeholder="e.g. stephenking@lorem.com"><br>
+          <div class="email-input-label-container input-label-container">
+            <label id="email-input-label" class="input-label" for="email-input">Email Address</label>
+            <p class="email-error error-message"></p>
+          </div>
 
-          <label for="phone-number-input">Phone Number</label><br>
-          <input name="phone-number" id="phone-number-input" type="number" placeholder="e.g. +1 234 567 890"><br>
+          <input name="email" id="email-input" type="email" placeholder="e.g. stephenking@lorem.com"><br>
+
+          <div class="phone-number-input-label-container input-label-container">
+            <label id="phone-number-input-label" class="input-label" for="phone-number-input">Phone Number</label>
+            <p class="phone-number-error error-message"></p>
+          </div>
+
+          <input name="phone-number" id="phone-number-input" type="text" placeholder="e.g. +1 234 567 890"><br>
 
           <button class="first-step-next-button next-button">Next Step</button>
         </div>

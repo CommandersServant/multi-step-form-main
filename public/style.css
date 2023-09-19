@@ -126,14 +126,42 @@ body {
   font-weight: 600;
 }
 
+.user-info-form-container input:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+
 .user-info-form-container input::placeholder {
   color: hsl(231, 11%, 63%);
   opacity: 0.9;
 }
 
+.input-label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 16px;
+  width: 440px;
+}
+
+.error-message {
+  color: hsl(354, 84%, 57%);
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+
 .first-step-next-button {
   margin-top: 70px;
   margin-left: 320px;
+}
+
+/* input:hover {
+  
+} */
+
+.next-button:hover {
+  background-color: hsl(213, 96%, 25%);
+  border: none;
+  cursor: pointer;
 }
 
 .next-button {
@@ -154,6 +182,11 @@ body {
   color: hsl(231, 11%, 63%);
   background-color: white;
   border: 0;
+}
+
+.back-button:hover {
+  cursor: pointer;
+  color: hsl(213, 96%, 18%);
 }
 
 .button-container {
@@ -179,6 +212,10 @@ body {
   border-radius: 7px;
   border-color: hsl(229, 24%, 87%);
   padding: 16px;
+}
+
+.plan:hover {
+  border-color: hsl(243, 100%, 62%);
 }
 
 .plan-name {
@@ -230,6 +267,10 @@ body {
   border-radius: 8px;
   box-sizing: border-box;
   margin-bottom: 15px;
+}
+
+.add-on:hover {
+  border-color: hsl(243, 100%, 62%);
 }
 
 #online-service, #larger-storage, #customizable-profile {
@@ -289,6 +330,10 @@ body {
   font-weight: 600;
 }
 
+.change-plan:hover {
+  color: hsl(243, 100%, 62%);
+}
+
 .plan-selected-price {
   color: hsl(213, 96%, 18%);
   font-weight: 600;
@@ -343,6 +388,11 @@ hr {
   font-size: 16px;
   font-weight: 600;
   border: none;
+}
+
+.confirm-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .thank-you-message-container {
