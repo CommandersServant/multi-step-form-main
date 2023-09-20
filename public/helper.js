@@ -29,3 +29,13 @@ function hasClassName(element, classNameToCheck) {
 
     return false; // Return false if the element is not found
 }
+
+function toCamelCase(inputString) {
+    return inputString.split(' ').map(function (word, index) {
+        if (index === 0) {
+            return word.toLowerCase(); // First word should be in lowercase
+        } else {
+            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+        }
+    }).join('');
+}

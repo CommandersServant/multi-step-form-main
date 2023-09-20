@@ -12,6 +12,7 @@
   <script src="public/userInfoVerification.js" defer></script>
   <script src="public/planSelection.js" defer></script>
   <script src="public/addonSelection.js" defer></script>
+  <script src="public/getAllSelections.js" defer></script>
   <script src="public/navigateSteps.js" defer></script>
   <script src="public/main.js" defer></script>
 
@@ -103,21 +104,21 @@
             <div class="plan selected" id="plan-arcade">
               <img src="public/assets/images/icon-arcade.svg" alt="arcade-icon">
               <h3 class="plan-name">Arcade</h3>
-              <p class="plan-price">$9/mo</p>
+              <p class="arcade-plan-price plan-price">$9/mo</p>
               <!-- <div class="yearly-free-months">2 months free</div> -->
             </div>
 
             <div class="plan unselected" id="plan-advanced">
               <img src="public/assets/images/icon-advanced.svg" alt="">
               <h3 class="plan-name">Advanced</h3>
-              <p class="plan-price">$12/mo</p>
+              <p class="advanced-plan-price plan-price">$12/mo</p>
               <!-- <div class="yearly-free-months">2 months free</div> -->
             </div>
 
             <div class="plan unselected" id="plan-pro">
               <img src="public/assets/images/icon-pro.svg" alt="">
               <h3 class="plan-name">Pro</h3>
-              <p class="plan-price">$15/mo</p>
+              <p class="pro-plan-price plan-price">$15/mo</p>
               <!-- <div class="yearly-free-months">2 months free</div> -->
             </div>
 
@@ -154,7 +155,7 @@
                 <h4 class="add-on-name">Online service</h4>
                 <p class="add-on-description">Access to multiplayer games</p>
               </div>
-              <p class="add-on-price">+$1/mo</p>
+              <p class="online-service-add-on-price add-on-price">+$1/mo</p>
             </div>
 
             <div class="larger-storage-add-on add-on unselected">
@@ -163,7 +164,7 @@
                 <h4 class="add-on-name">Larger storage</h4>
                 <p class="add-on-description">Extra 1TB of cloud save</p>
               </div>
-              <p class="add-on-price">+$2/mo</p>
+              <p class="larger-storage-add-on-price add-on-price">+$2/mo</p>
             </div>
 
             <div class="customizable-profile-add-on add-on unselected">
@@ -172,7 +173,7 @@
                 <h4 class="add-on-name">Customizable Profile</h4>
                 <p class="add-on-description">Custom theme on your profile</p>
               </div>
-              <p class="add-on-price">+$2/mo</p>
+              <p class="customizable-profile-add-on-price add-on-price">+$2/mo</p>
             </div>
           </div>
 
@@ -212,7 +213,6 @@
                 <p class="add-on-selected-price">+$1/mo</p>
               </div>
             </div>
-
           </div>
 
 
