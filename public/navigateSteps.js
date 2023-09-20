@@ -1,3 +1,12 @@
+const firstStep = document.querySelector('.user-info-form-container');
+const secondStep = document.querySelector('.plan-selection-container');
+const thirdStep = document.querySelector('.pick-add-ons-container');
+const fourthStep = document.querySelector('.finishing-up-container');
+const fifthStep = document.querySelector('.thank-you-message-container');
+
+
+const allSteps = [firstStep, secondStep, thirdStep, fourthStep, fifthStep];
+
 function getCurrentStep() {
     let currentStepIndex = null;
 

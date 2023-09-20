@@ -8,7 +8,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="public/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="public/style.css">
-  <script src="public/formValidation.js" defer></script>
+  <script src="public/helper.js" defer></script>
+  <script src="public/userInfoVerification.js" defer></script>
+  <script src="public/planSelection.js" defer></script>
+  <script src="public/addonSelection.js" defer></script>
   <script src="public/navigateSteps.js" defer></script>
   <script src="public/main.js" defer></script>
 
@@ -97,25 +100,25 @@
           <p class="form-description">You have the option of monthly or yearly billing.</p>
 
           <div class="plan-choices">
-            <div class="plan" id="plan-arcade">
+            <div class="plan selected" id="plan-arcade">
               <img src="public/assets/images/icon-arcade.svg" alt="arcade-icon">
               <h3 class="plan-name">Arcade</h3>
               <p class="plan-price">$9/mo</p>
-              <div class="yearly-free-months">2 months free</div>
+              <!-- <div class="yearly-free-months">2 months free</div> -->
             </div>
 
-            <div class="plan" id="plan-advanced">
+            <div class="plan unselected" id="plan-advanced">
               <img src="public/assets/images/icon-advanced.svg" alt="">
               <h3 class="plan-name">Advanced</h3>
               <p class="plan-price">$12/mo</p>
-              <div class="yearly-free-months">2 months free</div>
+              <!-- <div class="yearly-free-months">2 months free</div> -->
             </div>
 
-            <div class="plan" id="plan-pro">
+            <div class="plan unselected" id="plan-pro">
               <img src="public/assets/images/icon-pro.svg" alt="">
               <h3 class="plan-name">Pro</h3>
               <p class="plan-price">$15/mo</p>
-              <div class="yearly-free-months">2 months free</div>
+              <!-- <div class="yearly-free-months">2 months free</div> -->
             </div>
 
           </div>
@@ -145,8 +148,8 @@
           <p class="form-description">Add-ons help enhance your gaming experience.</p>
 
           <div class="add-ons">
-            <div class="add-on">
-              <input type="checkbox" name="online-service" id="online-service">
+            <div class="online-service-add-on add-on unselected">
+              <input class="checkbox" type="checkbox" name="online-service" id="online-service">
               <div>
                 <h4 class="add-on-name">Online service</h4>
                 <p class="add-on-description">Access to multiplayer games</p>
@@ -154,8 +157,8 @@
               <p class="add-on-price">+$1/mo</p>
             </div>
 
-            <div class="add-on">
-              <input type="checkbox" name="larger-storage" id="larger-storage">
+            <div class="larger-storage-add-on add-on unselected">
+              <input class="checkbox" type="checkbox" name="larger-storage" id="larger-storage">
               <div>
                 <h4 class="add-on-name">Larger storage</h4>
                 <p class="add-on-description">Extra 1TB of cloud save</p>
@@ -163,8 +166,8 @@
               <p class="add-on-price">+$2/mo</p>
             </div>
 
-            <div class="add-on">
-              <input type="checkbox" name="customizable-profile" id="customizable-profile">
+            <div class="customizable-profile-add-on add-on unselected">
+              <input class="checkbox" type="checkbox" name="customizable-profile" id="customizable-profile">
               <div>
                 <h4 class="add-on-name">Customizable Profile</h4>
                 <p class="add-on-description">Custom theme on your profile</p>

@@ -37,7 +37,6 @@ function validateForm() {
         return false;
     }
 
-    // successfulFormName();
     return true;
 }
 
